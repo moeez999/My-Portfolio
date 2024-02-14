@@ -285,17 +285,32 @@
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
-            <textarea
-              name=""
-              id=""
-              cols="0"
-              rows="10"
+          <form class="contact__form">
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
               class="contact__input"
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              class="contact__input"
+            />
+            <textarea
+              id="message"
+              placeholder="Message"
+              class="contact__input"
+              cols="30"
+              rows="10"
             ></textarea>
-            <input type="button" value="Send" class="contact__button button" />
+            <input
+              type="button"
+              value="Send"
+              onclick="sendEmail()"
+              class="contact__button button"
+            />
           </form>
         </div>
       </section>
@@ -328,6 +343,7 @@
     </footer>
 
     <!--===== SCROLL REVEAL =====-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--===== MAIN JS =====-->
