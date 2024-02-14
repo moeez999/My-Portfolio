@@ -497,3 +497,7 @@ img {
     width: 450px;
   }
 }
+
+.review-img:hover {
+  transform: scale(1);
+}
