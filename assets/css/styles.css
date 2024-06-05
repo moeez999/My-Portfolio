@@ -512,3 +512,13 @@ img {
 .thin {
   font-weight: 200;
 }
+.main-desc {
+  display: flex;
+  justify-content: center;
+}
+.desc {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  width: 50%;
+}
